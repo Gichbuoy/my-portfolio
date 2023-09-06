@@ -361,6 +361,7 @@ img {
   padding: 1rem;
   border-radius: .5rem;
   font-weight: var(--font-medium);
+  margin-right: 20px;
 }
 
 .button:hover{
@@ -408,11 +409,15 @@ img {
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
+  margin-bottom: auto;
 }
 
 .about__description{
   text-align: center;
   margin-bottom: var(--mb-2-5);
+  grid-column: initial;
+  align-items: initial;
+
 }
 
 .about__info{
@@ -511,37 +516,137 @@ img {
 
 .skills__html{
   width: 95%;
+  animation: skills__html 3s;
 }
 .skills__css{
   width: 87%;
+  animation: skills__css 3s;
 }
 .skills__js{
   width: 70%;
+  animation: skills__js 3s;
 }
 .skills__react{
   width: 85%;
+  animation: skills__react 3s;
 }
 .skills__php{
   width: 85%;
+  animation: skills__php 3s;
 }
 .skills__node{
   width: 70%;
+  animation: skills__node 3s;
 }
 .skills__mysql{
   width: 80%;
+  animation: skills__mysql 3s;
 }
 .skills__python{
   width: 70%;
+  animation: skills__python 3s;
 }
 .skills__figma{
   width: 90%;
+  animation: skills__figma 3s;
 }
 .skills__sketch{
   width: 80%;
+  animation: skills__sketch 3s;
 }
 .skills__adobexd{
   width: 60%;
+  animation: skills__adobexd 3s;
 }
+@keyframes skills__html{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes skills__css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+@keyframes skills__js{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes skills__react{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+@keyframes skills__php{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+@keyframes skills__node{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes skills__mysql{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes skills__python{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+@keyframes skills__figma{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+@keyframes skills__sketch{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes skills__adobexd{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+
 
 .skills__close .skills__list{
   height: 0;
@@ -1066,6 +1171,10 @@ img {
   .home__data{
     grid-column: initial;
   }
+  .about__data{
+    grid-column: initial;
+
+  }
   .home__img{
     order: 1;
     justify-self: center;
@@ -1145,6 +1254,7 @@ img {
   }
   .about__container{
     column-gap: 5rem;
+    grid-column: initial;
   }
   .about__img{
     width: 350px;
@@ -1221,3 +1331,40 @@ img {
 }
 
 /* For large devices */
+@media screen and (min-width: 1024px){
+  .header,
+  .main,
+  .footer__container{
+    padding: 0;
+  }
+  .home__blob{
+    width: 320px;
+  }
+  .home__social{
+    transform: translateX(-6rem);
+  }
+  .services__container{
+    grid-template-columns: repeat(3, 238px);
+  }
+  .portfolio__content{
+    column-gap: 5rem;
+  }
+  .swiper-portfolio-icon{
+    font-size: 3.5rem;
+  }
+  .swiper-button-prev{
+    left: -3.5rem;
+  }
+  .swiper-button-next{
+    right: -3.5rem;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: -4.5rem;
+  }
+  .contact__form{
+    width: 460px;
+  }
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

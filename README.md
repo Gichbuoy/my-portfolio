@@ -10,6 +10,6 @@
 * Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
 
-[!image](./screenshot/pic01.png)
-![image2](./screenshot/pic02.png)
+![screenshot 1](./screenshot/pic01.png)
+![screenshot 2](./screenshot/pic02.png)
 
